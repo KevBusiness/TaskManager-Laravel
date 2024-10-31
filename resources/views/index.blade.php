@@ -2,7 +2,7 @@
 @section('title', 'The list of tasks')
 @section('content')
   @forelse ( $tasks as $task )
-      <li>{{$task->title}}</li>
+      <a href={{route('tasks.show',['id' => $task->id])}}>{{$task->title}}</a>
   @empty
     <div>There are no tasks!</div>
   @endforelse

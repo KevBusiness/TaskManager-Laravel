@@ -8,6 +8,6 @@
 </head>
 <body>
     <h1>@yield('title')</h1>
-    <div>@yield('content')</div>
+    <div style="display: flex; flex-direction: column">@yield('content')</div>
 </body>
 </html>
